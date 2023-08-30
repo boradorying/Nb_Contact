@@ -25,7 +25,7 @@ class ProfileAdapter(private var profiles: MutableList<Profile>, private var onI
 
 
 
-    override fun getItemViewType(position: Int): Int {
+    override fun getItemViewType(position: Int): Int {//뷰타입 결정
         return if (profiles[position].bookmark) {
             VIEW_TYPE_BOOKMARKED
         } else {
@@ -33,7 +33,7 @@ class ProfileAdapter(private var profiles: MutableList<Profile>, private var onI
         }
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {//뷰홀더 만들긔
         val inflater = LayoutInflater.from(parent.context)
         return when (viewType) {
             VIEW_TYPE_NORMAL -> {
@@ -49,7 +49,7 @@ class ProfileAdapter(private var profiles: MutableList<Profile>, private var onI
     }
 
 
-    override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {//뷰홀더 바인딩하기
         when (holder.itemViewType) {
             VIEW_TYPE_NORMAL -> {
                 val normalViewHolder = holder as ViewHolder
