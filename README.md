@@ -26,12 +26,12 @@
 
 
 - 어댑터에서 override fun getItemViewType(position: Int): Int {//뷰타입 결정
-       - return if (profiles[position].bookmark) {
-         -   VIEW_TYPE_BOOKMARKED
-      -  } else {
-       -     VIEW_TYPE_NORMAL
-     -   }
-  -  } 을 이용해서 북마크 클릭여부에 따라 뷰타입 다르게 표시
+ - return if (profiles[position].bookmark) {
+ - VIEW_TYPE_BOOKMARKED
+ -  } else {
+ -     VIEW_TYPE_NORMAL
+ -   }
+-  } 을 이용해서 북마크 클릭여부에 따라 뷰타입 다르게 표시
 
 
 ### 3.전화 아이콘 클릭했을 시 전화걸기(뷰타입에 따라 전화거는 함수,아이콘도 따로 추가해줌)
