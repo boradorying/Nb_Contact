@@ -46,7 +46,7 @@
 ## 구현 동영상
 
 프로젝트의 구현 내용을 시연하는 동영상을 아래 링크에서 확인하실 수 있습니다:
-[프로젝트 시연 동영상](https://boradoritech-ai.tistory.com/47)
+[프로젝트 시연 동영상](https://boradoritech-ai.tistory.com/48)
 
 ## 사용 기술 및 라이브러리
 
